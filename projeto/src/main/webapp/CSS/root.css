@@ -1,0 +1,45 @@
+:root {
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+
+    --cinza-950: #0b0b0b;
+    --cinza-900: #121212;
+    --cinza-800: #1d1d1d;
+    --cinza-700: #2b2b2b;
+    --cinza-600: #424242;
+    --cinza-500: #6a6a6a;
+    --cinza-400: #8d8d8d;
+    --cinza-300: #b5b5b5;
+    --cinza-200: #d6d6d6;
+    --cinza-100: #ededed;
+    --cinza-50: #f7f7f7;
+
+    --cor-fundo: var(--cinza-950);
+    --cor-fundo-secundario: var(--cinza-900);
+    --cor-superficie: var(--cinza-800);
+    --cor-superficie-elevada: var(--cinza-700);
+
+    --texto-principal: var(--cinza-50);
+    --texto-secundario: var(--cinza-300);
+    --texto-suave: var(--cinza-400);
+    --texto-invertido: var(--cinza-950);
+
+    --borda-forte: var(--cinza-600);
+    --borda-suave: #2f2f2f;
+
+    --botao-bg: var(--cinza-100);
+    --botao-bg-hover: var(--cor-branco);
+    --botao-texto: var(--cinza-950);
+
+    --input-bg: #161616;
+    --input-texto: var(--cinza-50);
+    --input-borda: var(--cinza-600);
+    --focus-ring: rgba(255, 255, 255, 0.18);
+
+    --sombra-card: 0 18px 40px rgba(0, 0, 0, 0.35);
+    --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+    --erro: #d9534f;
+    --sucesso: #8bc34a;
+    --info: var(--cinza-400);
+}
