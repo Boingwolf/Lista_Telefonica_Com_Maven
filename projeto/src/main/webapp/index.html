@@ -6,28 +6,33 @@
     <meta content="author" name="Guilherme Eusébio">
     <title>Lista Telefónica</title>
     <link rel="stylesheet" href="./CSS/root.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/layout.css">
+    <link rel="stylesheet" href="./CSS/components.css">
+    <link rel="stylesheet" href="./CSS/contacts.css">
 </head>
 <body>
-    <header>
-        <h1>Lista Telefónica</h1>
+    <header class="site-header">
+        <div class="site-bar">
+            <h1 class="site-brand">Lista Telefónica</h1>
+        </div>
     </header>
     <main>
-        <div class="campo">
-            <input type="text" id="adicionarNome" name="adicionarNome" placeholder="Nome...">
-            <input type="number" id="adicionarNumero" name="adicionarNumero" placeholder="Número...">
-            <input type="email" id="adicionarEmail" name="adicionarEmail" placeholder="Email...">
-            <input type="text" id="adicionarNota" name="adicionarNota" placeholder="Nota...">
-            <button type="submit" id="adicionarContacto">Adicionar Contacto</button>
-        </div>
         <section class="lista-wrapper">
-            <h2>Contactos</h2>
+            <div class="lista-topo">
+                <h2>Contactos</h2>
+                <a class="botao-link" href="HTML/formContactos.html">Adicionar contacto</a>
+            </div>
             <ul id="listaContactos" class="lista-contactos"></ul>
         </section>
     </main>
-    <footer>
-        <p>Desenvolvido por Guilherme Eusébio</p>
+    <footer class="site-footer">
+        <div class="site-bar">
+            <p class="site-meta">Desenvolvido por Guilherme Eusébio</p>
+            <p class="site-meta">&copy; 2026</p>
+        </div>
     </footer>
-    <script src="JS/script.js"></script>
+    <script src="JS/contactos-service.js"></script>
+    <script src="JS/index.js"></script>
 </body>
 </html>

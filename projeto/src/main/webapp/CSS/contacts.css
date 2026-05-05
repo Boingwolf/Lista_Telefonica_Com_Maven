@@ -1,0 +1,96 @@
+.lista-wrapper,
+.detalhe-contacto {
+	border: 1px solid var(--borda-suave);
+	border-radius: 16px;
+	background: rgba(18, 18, 18, 0.85);
+	box-shadow: var(--sombra-suave);
+	padding: 20px;
+}
+
+.lista-topo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.lista-topo h2 {
+	margin: 0;
+}
+
+.lista-contactos {
+	list-style: none;
+	padding: 0;
+	margin: 16px 0 0;
+	display: grid;
+	gap: 12px;
+}
+
+.contacto-item {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 16px;
+	border: 1px solid var(--borda-suave);
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.contacto-link {
+	display: grid;
+	gap: 6px;
+	flex: 1;
+	text-decoration: none;
+	color: var(--texto-principal);
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contacto-link:hover {
+	transform: translateY(-1px);
+	color: var(--cor-branco);
+}
+
+.contacto-acoes {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.botao-acao {
+	padding: 10px 14px;
+	font-size: 0.95rem;
+}
+
+.botao-acao-perigo {
+	background: #3a1d1d;
+	color: var(--cinza-100);
+}
+
+.botao-acao-perigo:hover {
+	background: #5a2525;
+}
+
+.contacto-link span,
+.contacto-vazio,
+.detalhe-contacto p {
+	color: var(--texto-secundario);
+}
+
+@media (max-width: 640px) {
+	.contacto-item {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.lista-topo {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.contacto-acoes {
+		justify-content: flex-end;
+	}
+}

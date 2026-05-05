@@ -1,0 +1,31 @@
+html {
+	color-scheme: dark;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background:
+		radial-gradient(circle at top, rgba(255, 255, 255, 0.06), transparent 30%),
+		linear-gradient(180deg, var(--cor-fundo-secundario) 0%, var(--cor-fundo) 100%);
+	color: var(--texto-principal);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+	margin: 0 0 12px;
+	font-size: clamp(2rem, 4vw, 3rem);
+	letter-spacing: 0.04em;
+}
+
+p {
+	margin: 0 0 28px;
+	color: var(--texto-secundario);
+	line-height: 1.6;
+}
